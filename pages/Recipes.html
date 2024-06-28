@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/text.css">
+        <link rel="stylesheet" href="../styles/recipes.css">
+        <title>Healthy recipes</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../resources/logo.png" alt="logo">
+            </div>
+            <div class="header-backrgound">
+                <img src="../resources/HeaderBackground2.jpg" alt="HeaderBackgroundImg">
+            </div>
+            <div class="menu"> 
+                <ul>
+                    <li id="menu-home" class="item"><a class="item" href="index.html">Home</a></li>
+                    <li id="menu-sign-in" class="item"><a class="item" href="SignIn.html">Sign In</a></li>
+                    <li id="menu-contact" class="item"><a class="item" href="Recipes.html">Recipes</a></li>
+                    <li id="menu-about-us" class="item"><a class="item" href="../index.html">Offer</a></li>
+                    <li id="menu-about-us" class="item"><a class="item" href="#about">About us</a></li>
+                </ul>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="header-overlay"></div>
+            <div class="black-header-overlay"></div>
+        </header>
+        <div class="container">
+            <div class="file-manager">
+                <ul class="tree-view">
+                    <li>
+                        <span class="caret">Сніданки</span>
+                        <ul class="nested">
+                            <li onclick="showRecipe('oatmeal')">Вівсянка</li>
+                            <li onclick="showRecipe('smoothie')">Смузі</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="caret">Обіди</span>
+                        <ul class="nested">
+                            <li onclick="showRecipe('salad')">Салат</li>
+                            <li onclick="showRecipe('soup')">Суп</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="caret">Вечері</span>
+                        <ul class="nested">
+                            <li onclick="showRecipe('grilledChicken')">Грильована курка</li>
+                            <li onclick="showRecipe('quinoa')">Кіноа</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="oatmeal" class="recipe">
+                    <h2>Вівсянка</h2>
+                    <p>Опис рецепту для вівсянки...</p>
+                </div>
+                <div id="smoothie" class="recipe">
+                    <h2>Смузі</h2>
+                    <p>Опис рецепту для смузі...</p>
+                </div>
+                <div id="salad" class="recipe">
+                    <h2>Салат</h2>
+                    <p>Опис рецепту для салату...</p>
+                </div>
+                <div id="soup" class="recipe">
+                    <h2>Суп</h2>
+                    <p>Опис рецепту для супу...</p>
+                </div>
+                <div id="grilledChicken" class="recipe">
+                    <h2>Грильована курка</h2>
+                    <p>Опис рецепту для грильованої курки...</p>
+                </div>
+                <div id="quinoa" class="recipe">
+                    <h2>Кіноа</h2>
+                    <p>Опис рецепту для кіноа...</p>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/textvisibles.js"></script>
+        <script src="../scripts/menu.js"></script>
+        <script src="../scripts/recipes.js"></script>
+    </body>
+</html>

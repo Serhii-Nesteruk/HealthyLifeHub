@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/text.css">
+        <link rel="stylesheet" href="../styles/SignInAndSignUp.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../resources/logo.png" alt="logo">
+            </div>
+            <div class="header-backrgound">
+                <img src="../resources/HeaderBackground2.jpg" alt="HeaderBackgroundImg">
+            </div>
+            <div class="menu"> 
+                <ul>
+                    <li class="item"><a class="item" href="../index.html">Home</a></li>
+                    <li class="item"><a class="item" href="../pages/SignIn.html">Sign In</a></li>
+                    <li id="menu-contact" class="item"><a class="item" href="../pages/Recipes.html">Recipes</a></li>
+                    <li class="item"><a class="item" href="#contact">Contact us</a></li>
+                    <li class="item"><a class="item" href="#about">About us</a></li>
+                </ul>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="header-overlay"></div>
+            <div class="black-header-overlay"></div>
+            <section class="form-section">
+                <h2>Sign In</h2>
+                <form action="signin_process.php" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Sign In</button>
+                </form>
+                <p>Don't have an account? <a href="../pages/SignUp.html">Sign Up</a></p>
+            </section>
+       </header>
+       <script src="../scripts/menu.js"></script>
+       <script src="../scripts/textvisibles.js"></script> 
+    </body>
+</html>

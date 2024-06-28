@@ -1,0 +1,142 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 150px); 
+    margin-top: 0; 
+    padding-top: 20px;
+}
+
+.file-manager {
+    width: 250px;
+    background-color: #388e3c;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: -50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tree-view ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.tree-view li {
+    cursor: pointer;
+    margin-bottom: 2vh;
+    padding: 0.3vh;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 4px;
+}
+
+.tree-view li:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+}
+
+.tree-view .caret {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.tree-view .caret::before {
+    content: "\25B6";
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tree-view .caret-down::before {
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+    padding-left: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    margin-top: -50px; 
+}
+
+.recipe {
+    display: none;
+}
+
+.recipe h2 {
+    color: #388e3c;
+    border-bottom: 2px solid #388e3c;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.recipe p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 10px;
+}
+
+.recipe.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        height: auto;
+    }
+    
+    .file-manager {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+    
+    .content {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    .tree-view ul {
+        padding-left: 0; 
+    }
+
+    .tree-view li {
+        margin-bottom: 1vh;
+        padding: 1vh;
+    }
+
+    .tree-view .caret::before {
+        margin-right: 5px;
+    }
+
+    .content {
+        padding: 15px; 
+    }
+
+    .recipe h2 {
+        font-size: 20px; 
+    }
+
+    .recipe p {
+        font-size: 16px; 
+    }
+}

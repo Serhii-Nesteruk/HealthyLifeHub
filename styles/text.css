@@ -1,0 +1,10 @@
+.text-container {
+    opacity: 0;
+    transition: opacity 1s ease-in, transform 1s ease-in;
+    transform: translateY(2vh);
+}
+
+.text-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

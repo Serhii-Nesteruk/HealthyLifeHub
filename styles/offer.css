@@ -1,0 +1,98 @@
+.offer {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    background: #ffffff; 
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.offer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.offer .section {
+    flex: 1;
+    background: #f0fff0;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer .section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.offer .section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.offer .section h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.offer .section p {
+    flex-grow: 1;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.offer .section button {
+    padding: 12px 24px;
+    background: #4CAF50; 
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.offer .section button:hover {
+    background: #45a049;
+}
+
+@media (max-width: 768px) {
+    .offer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .offer .section {
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .offer .section h3 {
+        font-size: 1.2em;
+    }
+
+    .offer .section p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .offer .section button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
