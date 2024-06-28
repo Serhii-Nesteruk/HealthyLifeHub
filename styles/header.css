@@ -112,7 +112,7 @@ header {
     opacity: 0;
     transition: opacity 1s ease-in, transform 1s ease-in;
     transform: translateY(2vh);
-    left: 63%;
+    left: 61%;
     top: 45vh;
     position: absolute;
     z-index: 2; 
