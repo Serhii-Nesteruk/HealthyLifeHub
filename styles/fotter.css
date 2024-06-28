@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 footer {
-    background-color:  #388e3c; 
+    background-color:  #388e2f; 
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -47,3 +47,13 @@ footer .footer-content a {
 footer .footer-content a:hover {
     color: #e0e0e0; 
 }
+
+/*ext-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-content a:hover {
+    color: #e0e0e0; 
+}
+
+/**/
