@@ -56,7 +56,7 @@
     font-size: 1.1em;
 }
 
-.offer .section button {
+.offer .section .full-width-button {
     padding: 12px 24px;
     background: #4CAF50; 
     color: #fff;
@@ -64,9 +64,10 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease;
+    text-decoration: none;
 }
 
-.offer .section button:hover {
+.offer .section .full-width-button:hover {
     background: #45a049;
 }
 

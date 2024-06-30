@@ -33,6 +33,7 @@ body {
     padding: 0.3vh;
     transition: background-color 0.3s, transform 0.3s;
     border-radius: 4px;
+    list-style: none;
 }
 
 .tree-view li:hover {
