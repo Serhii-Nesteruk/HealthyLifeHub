@@ -15,14 +15,14 @@ header {
 .logo {
     margin: 0;
     position: absolute;
-    top: 0vh;
+    top: 1vh;
     left: 5vw;
     z-index: 2; 
 }
 
 .logo img {
     width: auto;
-    height: 10vh;
+    height: 8vh;
 }
 
 .header-backrgound {
@@ -238,7 +238,7 @@ header {
 
     .logo {
         left: 50%;
-        top: 0vh;
+        top: 2vh;
         transform: translateX(-50%);
     }
 
